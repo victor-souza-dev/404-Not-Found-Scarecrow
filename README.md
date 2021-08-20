@@ -31,7 +31,8 @@
 
 ## Overview
 
-![screenshot](web.jpg)
+![WebPage](/img/web.jpeg)
+![Mobile](/img/mobile.jpeg)
 
 
 ### Built With
