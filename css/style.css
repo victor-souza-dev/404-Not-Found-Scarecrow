@@ -1,0 +1,174 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Espaço+Mono:wght@700&display=swap');
+
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 1440px;
+    height: 1080px;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header {
+    width: 100%;
+    height: 10%;
+}
+
+.title {
+    font-family: 'Inconsolata', monoespaçada;
+    font-size: 24px;
+    line-height: 25,18px;
+    position: absolute;
+    left: 77px;
+    top: 40px;
+    color: black;
+    letter-spacing: -0.08em;
+}
+
+#main {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#scarecrow {
+    width: 539.22px;
+    height: 447.43px;
+    background-image: url('../Scarecrow.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#texts div {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#texts div h1 {
+    width: 586px;
+    height: 160px;
+    font-size: 64px;
+    line-height: 94,78px;
+    font-family: 'Space Mono';
+    letter-spacing: -0.035em;
+}
+
+#texts div h3 {
+    width: 381px;
+    height: 108px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #4F4F4F;
+    font-family: 'Space Mono';
+    font-weight: 400;
+    letter-spacing: -0.035em;
+}
+
+#texts button {
+    width: 216px;
+    height: 68px;
+    background-color: #333333;
+    color: white;
+    font-size: 14px;
+    line-height: 20.73px;
+    font-family: 'Space Mono';
+}
+
+#footer {
+    width: 100%;
+    height: 3%;
+}
+
+#footer p {
+    color: #BDBDBD;
+    font-size: 14px;
+    line-height: 17,07px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#criador {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        width: 375px;
+        height: 849px;
+    }
+
+    .title {
+        left: 24px;
+        top: 20px;
+    }
+
+    #main {
+        height: 70%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    #scarecrow {
+        width: 286.83px;
+        height: 238px;
+    }
+
+    #texts {
+        height: 55%;
+        justify-content: space-between;
+    }
+
+    #texts div {
+        justify-content: flex-start;
+    }
+    
+    #texts div h1 {
+        width: 350px;
+        height: 142px;
+        font-size: 48px;
+    }
+
+    #texts div h3 {
+        width: 328px;
+        height: 81px;
+        font-size: 18px;
+    }
+
+    #texts button {
+        width: 216px;
+        height: 68px;
+        font-size: 14px;
+    }
+
+}
